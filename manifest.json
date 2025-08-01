@@ -1,0 +1,129 @@
+{
+  "name": "Bilnix - Billing & Analytics Platform",
+  "short_name": "Bilnix",
+  "description": "One platform to manage sales, inventory, and profits across industries",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0ea5e9",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["business", "productivity", "finance"],
+  "icons": [
+    {
+      "src": "assets/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Salon Billing",
+      "short_name": "Salon",
+      "description": "Quick access to salon billing features",
+      "url": "/#salon-demo",
+      "icons": [
+        {
+          "src": "assets/shortcut-salon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Café Billing",
+      "short_name": "Café",
+      "description": "Quick access to café billing features",
+      "url": "/#cafe-demo",
+      "icons": [
+        {
+          "src": "assets/shortcut-cafe.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Mobile Shop",
+      "short_name": "Mobile",
+      "description": "Quick access to mobile shop features",
+      "url": "/#mobile-demo",
+      "icons": [
+        {
+          "src": "assets/shortcut-mobile.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Bilnix Dashboard on Desktop"
+    },
+    {
+      "src": "assets/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Bilnix Dashboard on Mobile"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.bilnix.app",
+      "id": "com.bilnix.app"
+    },
+    {
+      "platform": "webapp",
+      "url": "https://bilnix.com"
+    }
+  ],
+  "prefer_related_applications": false
+} 

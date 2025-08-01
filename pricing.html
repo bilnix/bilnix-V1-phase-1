@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bilnix Pricing - Choose the perfect plan for your business. Starting from ₹499/month with flexible billing options.">
+    <meta name="keywords" content="bilnix pricing, billing software pricing, business analytics pricing, POS pricing">
+    <meta name="author" content="Bilnix">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Bilnix Pricing - Choose Your Perfect Plan">
+    <meta property="og:description" content="Flexible pricing plans starting from ₹499/month. Choose monthly or annual billing.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bilnix.com/pricing">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Bilnix Pricing">
+    
+    <title>Bilnix Pricing - Choose Your Perfect Plan</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pricing.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Bilnix</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="pricing.html" class="nav-link active">Pricing</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pricing-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Pricing at Your Pace</h1>
+                <p class="hero-subtitle">Choose the perfect plan for your business. Start small, scale as you grow.</p>
+                
+                <!-- Billing Toggle -->
+                <div class="billing-toggle">
+                    <span class="toggle-label">Monthly</span>
+                    <label class="switch">
+                        <input type="checkbox" id="billingToggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="toggle-label">Annual <span class="save-badge">Save 20%</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="pricing-plans">
+        <div class="container">
+            <div class="plans-grid">
+                <!-- Starter Plan -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Starter</h3>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>
+                            <span class="amount" id="starterPrice">499</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-description">Perfect for small businesses getting started</p>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Up to 1000 transactions/month</li>
+                            <li><i class="fas fa-check"></i> Basic inventory management</li>
+                            <li><i class="fas fa-check"></i> Sales reports & analytics</li>
+                            <li><i class="fas fa-check"></i> Customer database</li>
+                            <li><i class="fas fa-check"></i> Email support</li>
+                            <li><i class="fas fa-check"></i> Mobile app access</li>
+                            <li><i class="fas fa-check"></i> Basic integrations</li>
+                            <li><i class="fas fa-check"></i> 1 user account</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="plan-action">
+                        <a href="contact.html" class="btn btn-outline">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="plan-card featured">
+                    <div class="plan-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3 class="plan-name">Professional</h3>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>
+                            <span class="amount" id="proPrice">699</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-description">Ideal for growing businesses with advanced needs</p>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Up to 2000 transactions/month</li>
+                            <li><i class="fas fa-check"></i> Advanced inventory management</li>
+                            <li><i class="fas fa-check"></i> Advanced analytics & insights</li>
+                            <li><i class="fas fa-check"></i> Customer loyalty program</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                            <li><i class="fas fa-check"></i> Multi-location support</li>
+                            <li><i class="fas fa-check"></i> Advanced integrations</li>
+                            <li><i class="fas fa-check"></i> 2 user accounts</li>
+                            <li><i class="fas fa-check"></i> Custom reporting</li>
+                            <li><i class="fas fa-check"></i> API access</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="plan-action">
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Enterprise</h3>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>
+                            <span class="amount" id="enterprisePrice">3495</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-description">For large organizations with custom requirements</p>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Unlimited transactions</li>
+                            <li><i class="fas fa-check"></i> Enterprise inventory management</li>
+                            <li><i class="fas fa-check"></i> Advanced business intelligence</li>
+                            <li><i class="fas fa-check"></i> Custom loyalty programs</li>
+                            <li><i class="fas fa-check"></i> 24/7 dedicated support</li>
+                            <li><i class="fas fa-check"></i> Unlimited locations</li>
+                            <li><i class="fas fa-check"></i> Custom integrations</li>
+                            <li><i class="fas fa-check"></i> Unlimited user accounts</li>
+                            <li><i class="fas fa-check"></i> Custom reporting & dashboards</li>
+                            <li><i class="fas fa-check"></i> Advanced API & webhooks</li>
+                            <li><i class="fas fa-check"></i> White-label solutions</li>
+                            <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="plan-action">
+                        <a href="contact.html" class="btn btn-outline">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="pricing-faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Can I change my plan anytime?</h3>
+                    <p>Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Is there a setup fee?</h3>
+                    <p>No setup fees! All plans include free setup and onboarding support to get you started quickly.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What payment methods do you accept?</h3>
+                    <p>We accept all major credit cards, UPI, net banking, and digital wallets for Indian customers.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do you offer a free trial?</h3>
+                    <p>Yes! Start with a 14-day free trial on any plan. No credit card required to begin.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Can I cancel anytime?</h3>
+                    <p>Absolutely. You can cancel your subscription at any time with no cancellation fees.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What about data security?</h3>
+                    <p>Your data is encrypted and stored securely. We follow industry best practices for data protection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="pricing-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Join thousands of businesses already using Bilnix to grow their operations.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Start Free Trial</a>
+                    <a href="contact.html" class="btn btn-secondary">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">Bilnix</span>
+                    </div>
+                    <p>Empowering businesses with intelligent billing and analytics solutions.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> bilnixdotin@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +91 9322880059</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nagpur, Maharashtra</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Bilnix. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="pricing.js"></script>
+</body>
+</html> 

@@ -1,0 +1,366 @@
+/* Services Page Styles */
+
+/* Services Hero */
+.services-hero {
+    padding: 140px 0 80px;
+    background: #edf6ff;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.services-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.services-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--text-secondary);
+}
+
+.pricing-highlight {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.highlight-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Industries Services */
+.industries-services {
+    padding: 80px 0;
+    background: var(--light-grey);
+}
+
+.industry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.industry-service-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-light);
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+}
+
+.industry-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-heavy);
+    border-color: var(--primary-color);
+}
+
+.industry-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.industry-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.industry-header h2 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.industry-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.features-list {
+    margin-bottom: 2rem;
+}
+
+.features-list h3 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.features-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.features-list li i {
+    color: var(--primary-color);
+    margin-right: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.download-options {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+}
+
+.download-options h3 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    border: 2px solid;
+}
+
+.download-btn.pwa {
+    background: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+.download-btn.pwa:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.download-btn.exe {
+    background: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.download-btn.exe:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* Pricing Section */
+.pricing-section {
+    margin-bottom: 2rem;
+}
+
+.pricing-section h3 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.pricing-section .pricing-card {
+    background: linear-gradient(135deg, var(--light-grey) 0%, var(--white) 100%);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.pricing-section .pricing-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-medium);
+    border-color: var(--primary-color);
+}
+
+.plan-header {
+    margin-bottom: 1.5rem;
+}
+
+.plan-header h4 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.pricing-section .price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.pricing-section .price span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.plan-features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.plan-features li {
+    padding: 0.5rem 0;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.plan-features li i {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+/* Custom Software Section */
+.custom-software {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+.custom-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.custom-content h2 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.custom-content p {
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.pricing-card {
+    background: linear-gradient(135deg, var(--light-grey) 0%, var(--white) 100%);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 3rem 2rem;
+    box-shadow: var(--shadow-medium);
+}
+
+.price-highlight {
+    margin-bottom: 2rem;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: block;
+}
+
+.period {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.custom-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.custom-features li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+.custom-features li i {
+    color: var(--primary-color);
+    margin-right: 0.75rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .services-hero p {
+        font-size: 1rem;
+    }
+    
+    .industry-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .industry-service-card {
+        padding: 2rem;
+    }
+    
+    .download-buttons {
+        flex-direction: column;
+    }
+    
+    .download-btn {
+        justify-content: center;
+    }
+    
+    .pricing-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .price {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-hero {
+        padding: 120px 0 60px;
+    }
+    
+    .industries-services,
+    .custom-software {
+        padding: 60px 0;
+    }
+    
+    .industry-service-card {
+        padding: 1.5rem;
+    }
+    
+    .pricing-highlight {
+        padding: 0.75rem 1.5rem;
+    }
+    
+    .highlight-text {
+        font-size: 1rem;
+    }
+} 
