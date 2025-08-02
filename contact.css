@@ -95,6 +95,32 @@
     font-size: 1.1rem;
 }
 
+/* Alternative Contact */
+.alternative-contact {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.alternative-contact p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.alternative-contact .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 12px 24px;
+    font-size: 1rem;
+}
+
+.alternative-contact .btn i {
+    font-size: 1.1rem;
+}
+
 /* Contact Info */
 .contact-info-section {
     background: var(--white);

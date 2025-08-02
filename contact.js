@@ -1,4 +1,10 @@
 // Contact Form Functionality
+
+// Initialize EmailJS
+(function() {
+    emailjs.init("YOUR_PUBLIC_KEY"); // You'll need to replace this with your actual EmailJS public key
+})();
+
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     
@@ -137,22 +143,74 @@ function handleFormSubmission(event) {
     submitButton.textContent = 'Sending...';
     submitButton.disabled = true;
     
-    // Simulate form submission (replace with actual API call)
-    setTimeout(() => {
-        // Reset form
-        form.reset();
-        
-        // Reset button
-        submitButton.textContent = originalText;
-        submitButton.disabled = false;
-        
-        // Show success message
-        showNotification('Thank you! Your message has been sent successfully. We\'ll get back to you soon.', 'success');
-        
-        // Log form data (for development)
-        console.log('Form submitted:', data);
-        
-    }, 2000);
+    // Prepare email template parameters
+    const templateParams = {
+        to_email: 'bilnixdotin@gmail.com',
+        from_name: data.name,
+        from_email: data.email,
+        from_phone: data.phone || 'Not provided',
+        business_type: data.business || 'Not specified',
+        service_required: data.service || 'Not specified',
+        message: data.message,
+        reply_to: data.email
+    };
+    
+    // For immediate functionality, use mailto link
+    // This will open the user's default email client
+    const subject = `Contact Form - ${data.name} - ${data.business || 'General Inquiry'}`;
+    const body = `
+Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone || 'Not provided'}
+Business Type: ${data.business || 'Not specified'}
+Service Required: ${data.service || 'Not specified'}
+
+Message:
+${data.message}
+    `;
+    
+    const mailtoLink = `mailto:bilnixdotin@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
+    
+    // Reset form
+    form.reset();
+    
+    // Reset button
+    submitButton.textContent = originalText;
+    submitButton.disabled = false;
+    
+    // Show success message
+    showNotification('Email client opened! Please send the email to complete your message.', 'success');
+    
+    // Alternative: If you want to use EmailJS later, uncomment the code below
+    /*
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        .then(function(response) {
+            console.log('Email sent successfully:', response);
+            
+            // Reset form
+            form.reset();
+            
+            // Reset button
+            submitButton.textContent = originalText;
+            submitButton.disabled = false;
+            
+            // Show success message
+            showNotification('Thank you! Your message has been sent successfully. We\'ll get back to you soon.', 'success');
+            
+        }, function(error) {
+            console.error('Email sending failed:', error);
+            
+            // Reset button
+            submitButton.textContent = originalText;
+            submitButton.disabled = false;
+            
+            // Show error message
+            showNotification('Sorry, there was an error sending your message. Please try again or contact us directly.', 'error');
+        });
+    */
 }
 
 function showNotification(message, type = 'info') {
